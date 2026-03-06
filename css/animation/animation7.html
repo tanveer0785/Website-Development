@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: aqua;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        font-size: 50px;
+        font-style: italic;
+        animation: move 2s linear 1s 4;
+      }
+
+      @keyframes move {
+        to {
+          transform: translate(300px) rotate(30deg);
+        }
+        from {
+          transform: translateY(0px) rotate(30deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">WEB</div>
+  </body>
+</html>

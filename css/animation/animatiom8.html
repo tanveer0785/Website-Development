@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border-radius: 20px;
+            animation: box 3s linear 4;
+        }
+        @keyframes box {
+            0%{
+                transform: translate(0);
+            }
+            25%{
+                transform: translateX(1000px);
+            }
+            50%{
+                transform: translateX(1000px)translateY(300px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

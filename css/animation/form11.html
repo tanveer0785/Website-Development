@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+          /* background-color:yellow; */
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header{
+            padding: 30px 60px;
+        }
+        nav h1{
+          /* color: white; */
+        }
+        nav span{
+            color: orange;
+        }
+        .outer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            font-size: 20px;
+            gap: 30px;
+        }
+        .nav button{
+            font-size: 20px;
+            padding: 10px 10px;
+            border: none;
+            background-color: yellow;
+            color:black;
+        }
+        button:hover{
+            background-color: black;
+            color:white;
+            transition: all 0.7s linear;
+        }
+        .span{
+            padding: 200px 0;
+        }
+        .span h2{
+            color: orange;
+            font-size: 15px;
+        }
+        .span h1{
+            /* color: white; */
+            font-size: 40px;
+        }
+        .span span{
+            color: orange;
+            font-size: 40px;
+        }
+        .span h5{
+            font-size: 17px;
+            /* color: white; */
+        }
+        .logo{
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-size: 20px;
+        }
+        .box4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            background-color:greenyellow;
+        }
+        /* .layer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .layer img{
+            width: 350px;
+            height: 500px;
+            position: absolute;
+            top: 100px;
+            margin-left: 700px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <h1>Port <span>folio</span></h1>
+            <div class="outer">
+                <ul><div class="nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">My services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Teastimonil</a></li>
+                    <button>Contact us</button>
+                </div></ul>
+            </div>
+        </nav>
+        <div class="span">
+            <h2>Welcome To Dezven.com</h2>
+            <h1>Evens <span>Dezven</span></h1>
+            <h5>-I,m a passionate grahpic designerfrom New York</h5>
+            <div class="logo">
+                 <div class="box4"><box-icon type='logo' name='facebook-circle'></box-icon></div>
+                    <div class="box4"><box-icon name='twitter' type='logo' ></box-icon></div>
+                    <div class="box4">in</div>
+                    <div class="box4"><box-icon name='github' type='logo' ></box-icon></div>
+                    <div class="box4"><box-icon name='instagram-alt' type='logo' ></box-icon></div>
+                </div>
+                <div class="layer">
+                    <!-- <img src="./1737117110487.jpg" alt=""> -->
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

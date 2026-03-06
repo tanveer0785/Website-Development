@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content:baseline;
+            align-items:baseline;
+            font-size: 50px;
+            color: red;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            animation: move 5s linear 4;
+
+        }
+        @keyframes move {
+            0%{
+                transform: translate(0) ;
+                background-color: red;
+                /* border-radius: 5%; */
+
+            }
+            25%{
+                transform: translateY(400px);
+                background-color: black;
+                border-radius: 15%;
+            }
+            50%{
+                transform: translateY(400px) translateX(1200px) ;
+                background-color: blue;
+                border-radius: 25%;
+            }
+            75%{
+                transform: translateY(0) translateX(1200px);
+                background-color: palevioletred;
+                border-radius: 40%;
+            }
+            100%{
+                transform: translateX(0) translateY(0) ;
+                background-color: chartreuse;
+                border-radius: 50%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Devolper</div>
+</body>
+</html>

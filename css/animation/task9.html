@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: lightblue;
+        }
+        .main{
+            max-width: 400px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .main h1{
+            text-align: center;
+            color: blue;
+            padding: 10px;
+            font-size: 40px;
+        }
+        .one{
+            padding: 0 10px;
+            
+            
+        }
+        input{
+            font-size: 20px;
+            border: 2px solid blue;
+            border-radius: 8px;
+        }
+        button{
+            font-size: 20px;
+            background-color: blue;
+            color: white;
+        border: 1px solid blue;
+        border-radius: 6px;
+        }
+        .outer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 10px;
+        }
+        p{
+            font-size: 30px;
+            color: green;
+            font-weight: bold;
+        }
+        h4{
+            font-size: 20px;
+            text-decoration: line-through;
+            color: #444;
+        }
+        .outer button{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Task Manager</h1>
+        <div class="one">
+            <input type="text"placeholder="What needs to be dons?" >
+            <button>Task Add</button>
+        </div>
+        <div class="outer">
+            <p>✔</p>
+            <h4>Task A</h4>
+            <button>Remove</button>
+        </div>
+    </div>
+</body>
+</html>

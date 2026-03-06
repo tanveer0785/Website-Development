@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: lightblue;
+      }
+      .main {
+        max-width: 400px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+      }
+      h1 {
+        text-align: center;
+        color: blue;
+        font-size: 40px;
+        margin-top: 10px;
+      }
+      .one {
+        margin: 20px;
+      }
+      input {
+        border-radius: 10px;
+        border: solid 2px blue;
+        font-size: 20px;
+        padding: 10px;
+      }
+      .btn {
+      }
+      .outer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 30px;
+      }
+      p {
+        font-size: 30px;
+        font-weight: bold;
+        color: green;
+      }
+      h4 {
+        color: black;
+        text-decoration: dashed;
+        text-decoration-line: line-through;
+      }
+      .Remove {
+        background-color: red;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        font-size: 20px;
+      }
+      .no {
+        text-decoration: none;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Task Manager</h1>
+      <div class="one">
+        <input type="text" placeholder="What needs to be done?" />
+        <div class="btn">Add Task</div>
+      </div>
+      <div class="outer">
+        <p>✔</p>
+        <h4>Task A</h4>
+        <button class="Remove">Remove</button>
+      </div>
+      <div class="outer">
+        <p>✔</p>
+        <h4 class="no">Task B</h4>
+        <button class="Remove">Remove</button>
+      </div>
+      <div class="outer">
+        <p>✔</p>
+        <h4>Task C</h4>
+        <button class="Remove">Remove</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        background-image: url(./gym_design_Headers.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      .layer {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(48, 45, 45, 0.8);
+        z-index: -1;
+      }
+      nav{
+        display: flex;
+        position: fixed;
+        top: 0;
+        padding: 0 30px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+        background-color: rgb(109, 107, 103);
+      }
+      .logo h1 {
+        font-size: 32px;
+        font-weight: bold;
+        color:white;
+      }
+      .logo h1 span {
+        color: crimson;
+      }
+      .links {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content:;
+        gap: 20px;
+      }
+      
+      
+      .links button {
+        padding: 10px 15px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: red;
+        color: white;
+        transition: all 1s linear;
+      }
+      .links button:hover{
+         background-color:green;
+         /* transition: all; */
+      }
+      .content{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 0 auto;
+      }
+      .content h3{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.479);
+      }
+      .content h2{
+        text-align: center;
+        font-size: 32px;
+      }
+      .content p{
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+        color: rgb(182, 171, 171);
+      }
+      .content .cta{
+        padding: 10px 15px;
+        border-radius: 10px;
+        background-color: crimson;
+        border: none;
+        outline: none;
+        color: white;
+        max-width: max-content;
+        cursor: pointer ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layer"></div>
+    <nav>
+      <div class="logo">
+        <h1>Nextgen <span>Pro</span></h1>
+      </div>
+      <div class="links">
+        <div class="box">HOME</div>
+        <div class="box">ABOUT</div>
+        <div class="box">PRICING</div>
+        <div class="box">BLOGS</div>
+        <div class="box">PRODUCTS</div>
+        <button>Contact us</button>
+      </div>
+    </nav>
+    <div class="content">
+      <h3>Welcome to Nextgen</h3>
+      <h2>Let,s explore world with knowledge</h2>
+      <!-- <ul>
+        <li>HOME</li>
+        <li>About</li>
+        <li>PRICING</li>
+        <li>Blogs</li>
+        <li>Prpducts</li>
+      </ul> -->
+      <p>
+        Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Animi dolore a
+        vitae molestiae aliquam. <br> Doloremque assumenda odio, quis magnam vitae
+        facere quaerat ab totam eaque  <br>perspiciatis sequi! Non, illo aperiam.
+      </p>
+      <div class="cta">Expolore More</div>
+    </div>
+  </body>
+</html>

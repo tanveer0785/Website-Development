@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #212121;
+      }
+      .btn {
+        position: relative;
+        width:12em;
+        height: 3.7em;
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+        text-transform:uppercase;
+        border: 3px ridge red;
+        background-color: transparent;
+        color:yellow;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 1s;
+      }
+      .btn::after {
+        content: "";
+        position: absolute;
+        left: 3%;
+        top: -10px;
+        width: 95%;
+        height: 40%;
+        background-color:#212121;
+        transition: 0.5s;
+      }
+      .btn::before {
+        content: "";
+        position: absolute;
+        left: 3%;
+        top: 80%;
+        width: 95%;
+        height: 40%;
+        background-color: #212121;
+        transition: 0.5s;
+      }
+      .btn:hover::after,
+      .btn:hover::before {
+        transform: scale(0);
+      }
+      .btn:hover {
+        box-shadow: inset 0px 0px 25px yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">button</button>
+  </body>
+</html>

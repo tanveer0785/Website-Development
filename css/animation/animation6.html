@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            width: 100%;
+            height: 100px;
+            background-color: darkgoldenrod;
+            color: red;
+            font-size: 70px;
+            font-weight: bold;
+            font-style: italic;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            font-style: italic;
+            font-family: sans-serif;
+            width: 100%;
+            height: 100px;
+            background-color: brown;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+            font-weight: bold;
+            animation-name: box;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 5;
+        }
+        #div1{animation-timing-function: linear;background-color: blue;}
+        #div2{animation-timing-function: ease;background-color: cadetblue;}
+        #div3{animation-timing-function: ease-in;background-color: yellow;}
+        #div4{animation-timing-function: ease-out;background-color: tomato;}
+        #div5{animation-timing-function: ease-in-out;background-color: crimson;}
+        @keyframes box {
+           /* from{left: 0px;}  */
+           /* to{left: 300px;}  */
+           0%{
+            transform: translate(0);
+           }
+           25%{
+            transform: translateX(800px)translateY(0px);
+           }
+           50%{
+            transform: translateX(800px)translateY(200px);
+           }
+           75%{
+            transform: translateX(0px)translateY(200px);
+           }
+           100%{
+            transform: translateX(0px)translateY(0px);
+           }
+        }
+    </style>
+  </head>
+  <body>
+    <h1>CSS animation-timing-function Property</h1>
+    <p>
+      The animation-timing-function property specifies the speed curve of the
+      animation. The following example shows some of the different speed curves
+      that can be used:
+    </p>
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+  </body>
+</html>

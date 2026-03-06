@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: green;
+        }
+        .container{
+            padding: 20px 50px; 
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+         h1{
+           color: white;
+        }
+        .container span{
+            color: orange;
+        }
+        .outer{
+            
+            text-decoration: underline;
+            margin: -40px;
+            gap: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+        .box6{
+            color: orange;
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: 10px 10px;
+            font-size: 20px;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover{
+            background-color: yellow;
+            color: black;
+            transition: all 0.6s linear;
+        }
+        .layer{
+            padding: 250px 0;
+            
+        }
+        h2{
+            color: white;
+            font-size: 30px;
+        }
+        .come{
+            gap: 40px;
+        display: flex;
+        align-items: center;
+        }
+        .box4{
+          display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+       flex-direction:row;
+        color:black;
+        background-color:white;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid yellow;
+        border-radius: 20px;
+        }
+        .main img{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 250px;
+            margin-left: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>Port <span>folio</span></h1>
+            <div class="outer">
+                <div class="box6">Home</div>
+                <div class="box">About me</div>
+                <div class="box">Education</div>
+                <div class="box">My services</div>
+                <div class="box">Portfolio</div>
+                <div class="box">Teastimonil</div>
+                <button>Contact us</button>
+            </div>
+        </nav>
+        <div class="layer">
+            <h4>Welcome to Dezven.com</h4>
+            <h2>Evens <span>Dezven</span></h2>
+            <h5>-I,m a passionate grahpic designerfrom New York</h5>
+            <div class="come">
+                <div class="box4"><box-icon type='logo' name='facebook-circle'></box-icon></div>
+                <div class="box4"><box-icon name='twitter' type='logo' ></box-icon></div>
+                <div class="box4">in</div>
+                <div class="box4"><box-icon name='github' type='logo' ></box-icon></div>
+                <div class="box4"><box-icon name='instagram-alt' type='logo' ></box-icon></div>
+            </div>
+            <div class="main">
+                <img src="./pngff-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

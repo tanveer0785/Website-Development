@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+             background-color: rgb(27, 24, 24); 
+        }
+        nav{
+            width: 100%;
+            padding: 20px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .container{
+            padding: 30px 50px;
+        }
+        nav h1{
+         color: white;
+        }
+        nav span{
+            color: orange;
+        }
+        .outer{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .nav{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav li{
+            position: relative;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: white;
+        }
+       
+        
+        .nav li a::before{
+            content: "";
+            width: 0;
+            height: 2px;
+            position: absolute;
+            background-color: white;
+            bottom: -6px;
+            transition: all 0.9s;
+        }
+        .nav li a::before{
+            width: 100%;
+        }
+        .nav li:hover{
+            color: #f4f80c;
+        }
+        .nav button{
+            font-size: 20px;
+            padding: 10px 10px;
+            margin: -10px;
+            background-color:yellow;
+            border: none;
+            gap: 30px;
+        }
+        .nav button:hover{
+            background-color:white;
+            color: black;
+            text-decoration: underline;
+            transition: all 0.7s ease-in-out;
+        }
+        .hero{
+            display: flex;
+            justify-content: space-between;
+            padding: 180px 60px;
+        }
+        .left{
+            width: 50%;
+        }
+        .left h5{
+            color: white;
+        }
+        .left p{
+            color:orange;
+        }
+        .left h1{
+            color: white;
+        }
+        .left h1 span{
+            color: #f4f80c;
+        }
+        .tagline{
+       margin-bottom: 60px;
+       font-size: 18px;
+        }
+        .icons{
+            padding: 30px 30px;
+         color: black;
+         display: flex;
+         align-items: center;
+         gap: 40px;
+        
+        }
+        .box4:hover{
+            background-color:#f4f80c;
+            color: red;
+            transition: all 0.9s linear;
+            transform: rotate(360deg)translate(10px) scale(0.8) ;
+        }
+        .box4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            background-color: white;
+            font-size: 30px;
+            border:1px solid yellow;
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
+
+        }
+        .layer img{
+        position: absolute;
+        top: 250px;
+        width: 400px;
+        height: 400px;
+        margin: -100px;
+        margin-left: 700px;
+        background-size: contain;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>Port <span>folio</span></h1>
+            <div class="outer">
+               <ul><div class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">My services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Teastimonil</a></li>
+                <button>Contact us</button>
+               </div></ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="left">
+                <p>Welcome To Dezven.com</p>
+                <h1>Evens <span>Dezven</span></h1>
+                <h5>-I,m a passionate grahpic designerfrom New York</h5>
+                <div class="icons">
+                     <div class="box4"><box-icon type='logo' name='facebook-circle'></box-icon></div>
+                    <div class="box4"><box-icon name='twitter' type='logo' ></box-icon></div>
+                    <div class="box4">in</div>
+                    <div class="box4"><box-icon name='github' type='logo' ></box-icon></div>
+                    <div class="box4"><box-icon name='instagram-alt' type='logo' ></box-icon></div>
+                </div>
+                 <div class="layer">
+            <img src="./Saphire_95-removebg-preview.png" alt="">
+        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

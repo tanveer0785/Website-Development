@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            /* background-color: yellow; */
+            animation: box 3s linear 3  ;
+        }
+        @keyframes box {
+         0%{
+            transform: translate(0);
+            background-color: blue;
+         }
+         25%{
+            transform:translateX(1300px);
+            background-color:black ;
+             rotate: 45deg;
+
+         }
+         50%{
+            transform: translateX(1300px) translateY(300px); 
+             background-color: aqua; 
+             border-radius: 50%; 
+             rotate: 90deg; 
+         }
+         75%{
+            transform: translateX(0) translateY(300px);
+            background-color: violet;
+            rotate: 180deg;
+         }
+         100%{
+            transform: translateX(0) translateY(0);
+            background-color: springgreen;
+            rotate: 360deg;
+         }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

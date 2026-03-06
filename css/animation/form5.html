@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL CLOCK</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url(./ccc.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            padding: 30px 40px;
+            background-color:rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        .clock{
+            font-size: 5rem;
+            font-weight: bold;
+            color: blue;
+            text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+            text-align: center;
+        }
+        .date{
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="clock"id="clock">06:50:48</div>
+        <div class="date"id="date">27,11,2025</div>
+    </div>
+</body>
+</html>
